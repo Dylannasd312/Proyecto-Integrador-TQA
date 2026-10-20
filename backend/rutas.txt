@@ -1,0 +1,98 @@
+
+  GET|HEAD        / ................................................................................. routes/web.php:5
+  GET|HEAD        api/analisis-ia ................................. analisis-ia.index › Api\AnalisisIAController@index
+  POST            api/analisis-ia ................................. analisis-ia.store › Api\AnalisisIAController@store
+  GET|HEAD        api/analisis-ia/{analisis_ium} .................... analisis-ia.show › Api\AnalisisIAController@show
+  PUT|PATCH       api/analisis-ia/{analisis_ium} ................ analisis-ia.update › Api\AnalisisIAController@update
+  DELETE          api/analisis-ia/{analisis_ium} .............. analisis-ia.destroy › Api\AnalisisIAController@destroy
+  GET|HEAD        api/archivos-clinicos ................. archivos-clinicos.index › Api\ArchivoClinicoController@index
+  POST            api/archivos-clinicos ................. archivos-clinicos.store › Api\ArchivoClinicoController@store
+  GET|HEAD        api/archivos-clinicos/{archivos_clinico} archivos-clinicos.show › Api\ArchivoClinicoController@show
+  PUT|PATCH       api/archivos-clinicos/{archivos_clinico} archivos-clinicos.update › Api\ArchivoClinicoController@up…
+  DELETE          api/archivos-clinicos/{archivos_clinico} archivos-clinicos.destroy › Api\ArchivoClinicoController@d…
+  GET|HEAD        api/citas ................................................... citas.index › Api\CitaController@index
+  POST            api/citas ................................................... citas.store › Api\CitaController@store
+  GET|HEAD        api/citas/{cita} .............................................. citas.show › Api\CitaController@show
+  PUT|PATCH       api/citas/{cita} .......................................... citas.update › Api\CitaController@update
+  DELETE          api/citas/{cita} ........................................ citas.destroy › Api\CitaController@destroy
+  GET|HEAD        api/compras ............................................. compras.index › Api\CompraController@index
+  POST            api/compras ............................................. compras.store › Api\CompraController@store
+  GET|HEAD        api/compras/{compra} ...................................... compras.show › Api\CompraController@show
+  PUT|PATCH       api/compras/{compra} .................................. compras.update › Api\CompraController@update
+  DELETE          api/compras/{compra} ................................ compras.destroy › Api\CompraController@destroy
+  GET|HEAD        api/consultas ....................................... consultas.index › Api\ConsultaController@index
+  POST            api/consultas ....................................... consultas.store › Api\ConsultaController@store
+  GET|HEAD        api/consultas/{consulta} .............................. consultas.show › Api\ConsultaController@show
+  PUT|PATCH       api/consultas/{consulta} .......................... consultas.update › Api\ConsultaController@update
+  DELETE          api/consultas/{consulta} ........................ consultas.destroy › Api\ConsultaController@destroy
+  GET|HEAD        api/consultorios .............................. consultorios.index › Api\ConsultorioController@index
+  POST            api/consultorios .............................. consultorios.store › Api\ConsultorioController@store
+  GET|HEAD        api/consultorios/{consultorio} .................. consultorios.show › Api\ConsultorioController@show
+  PUT|PATCH       api/consultorios/{consultorio} .............. consultorios.update › Api\ConsultorioController@update
+  DELETE          api/consultorios/{consultorio} ............ consultorios.destroy › Api\ConsultorioController@destroy
+  POST            api/despachos-receta ............................................ Api\DespachoRecetaController@store
+  GET|HEAD        api/historias-clinicas ......................................... Api\HistoriaClinicaController@index
+  GET|HEAD        api/historias-clinicas/{id} ..................................... Api\HistoriaClinicaController@show
+  PUT             api/historias-clinicas/{id} ................................... Api\HistoriaClinicaController@update
+  POST            api/login ................................................................. Api\AuthController@login
+  POST            api/logout ............................................................... Api\AuthController@logout
+  GET|HEAD        api/me ....................................................................... Api\AuthController@me
+  GET|HEAD        api/medicamentos .............................. medicamentos.index › Api\MedicamentoController@index
+  POST            api/medicamentos .............................. medicamentos.store › Api\MedicamentoController@store
+  GET|HEAD        api/medicamentos/{medicamento} .................. medicamentos.show › Api\MedicamentoController@show
+  PUT|PATCH       api/medicamentos/{medicamento} .............. medicamentos.update › Api\MedicamentoController@update
+  DELETE          api/medicamentos/{medicamento} ............ medicamentos.destroy › Api\MedicamentoController@destroy
+  GET|HEAD        api/medicos ............................................. medicos.index › Api\MedicoController@index
+  POST            api/medicos ............................................. medicos.store › Api\MedicoController@store
+  GET|HEAD        api/medicos/{medico} ...................................... medicos.show › Api\MedicoController@show
+  PUT|PATCH       api/medicos/{medico} .................................. medicos.update › Api\MedicoController@update
+  DELETE          api/medicos/{medico} ................................ medicos.destroy › Api\MedicoController@destroy
+  GET|HEAD        api/pacientes ....................................... pacientes.index › Api\PacienteController@index
+  POST            api/pacientes ....................................... pacientes.store › Api\PacienteController@store
+  GET|HEAD        api/pacientes/{paciente} .............................. pacientes.show › Api\PacienteController@show
+  PUT|PATCH       api/pacientes/{paciente} .......................... pacientes.update › Api\PacienteController@update
+  DELETE          api/pacientes/{paciente} ........................ pacientes.destroy › Api\PacienteController@destroy
+  GET|HEAD        api/pago-citas ..................................... pago-citas.index › Api\PagoCitaController@index
+  POST            api/pago-citas ..................................... pago-citas.store › Api\PagoCitaController@store
+  GET|HEAD        api/pago-citas/{pago_cita} ........................... pago-citas.show › Api\PagoCitaController@show
+  PUT|PATCH       api/pago-citas/{pago_cita} ....................... pago-citas.update › Api\PagoCitaController@update
+  DELETE          api/pago-citas/{pago_cita} ..................... pago-citas.destroy › Api\PagoCitaController@destroy
+  GET|HEAD        api/pago-recetas ............................... pago-recetas.index › Api\PagoRecetaController@index
+  POST            api/pago-recetas ............................... pago-recetas.store › Api\PagoRecetaController@store
+  GET|HEAD        api/pago-recetas/create ...................... pago-recetas.create › Api\PagoRecetaController@create
+  GET|HEAD        api/pago-recetas/{pago_receta} ................... pago-recetas.show › Api\PagoRecetaController@show
+  PUT|PATCH       api/pago-recetas/{pago_receta} ............... pago-recetas.update › Api\PagoRecetaController@update
+  DELETE          api/pago-recetas/{pago_receta} ............. pago-recetas.destroy › Api\PagoRecetaController@destroy
+  GET|HEAD        api/pago-recetas/{pago_receta}/edit .............. pago-recetas.edit › Api\PagoRecetaController@edit
+  GET|HEAD        api/personal ......................................... personal.index › Api\PersonalController@index
+  POST            api/personal ......................................... personal.store › Api\PersonalController@store
+  GET|HEAD        api/personal/{personal} ................................ personal.show › Api\PersonalController@show
+  PUT|PATCH       api/personal/{personal} ............................ personal.update › Api\PersonalController@update
+  DELETE          api/personal/{personal} .......................... personal.destroy › Api\PersonalController@destroy
+  GET|HEAD        api/proveedores .................................. proveedores.index › Api\ProveedorController@index
+  POST            api/proveedores .................................. proveedores.store › Api\ProveedorController@store
+  GET|HEAD        api/proveedores/{proveedore} ....................... proveedores.show › Api\ProveedorController@show
+  PUT|PATCH       api/proveedores/{proveedore} ................... proveedores.update › Api\ProveedorController@update
+  DELETE          api/proveedores/{proveedore} ................. proveedores.destroy › Api\ProveedorController@destroy
+  GET|HEAD        api/recetas ............................................. recetas.index › Api\RecetaController@index
+  POST            api/recetas ............................................. recetas.store › Api\RecetaController@store
+  GET|HEAD        api/recetas/{receta} ...................................... recetas.show › Api\RecetaController@show
+  PUT|PATCH       api/recetas/{receta} .................................. recetas.update › Api\RecetaController@update
+  DELETE          api/recetas/{receta} ................................ recetas.destroy › Api\RecetaController@destroy
+  GET|HEAD        api/signos-vitales ........................ signos-vitales.index › Api\SignosVitalesController@index
+  POST            api/signos-vitales ........................ signos-vitales.store › Api\SignosVitalesController@store
+  GET|HEAD        api/signos-vitales/{signos_vitale} .......... signos-vitales.show › Api\SignosVitalesController@show
+  PUT|PATCH       api/signos-vitales/{signos_vitale} ...... signos-vitales.update › Api\SignosVitalesController@update
+  DELETE          api/signos-vitales/{signos_vitale} .... signos-vitales.destroy › Api\SignosVitalesController@destroy
+  GET|HEAD        api/usuarios .......................................... usuarios.index › Api\UsuarioController@index
+  POST            api/usuarios .......................................... usuarios.store › Api\UsuarioController@store
+  GET|HEAD        api/usuarios/{usuario} .................................. usuarios.show › Api\UsuarioController@show
+  PUT|PATCH       api/usuarios/{usuario} .............................. usuarios.update › Api\UsuarioController@update
+  DELETE          api/usuarios/{usuario} ............................ usuarios.destroy › Api\UsuarioController@destroy
+  GET|HEAD        sanctum/csrf-cookie .............. sanctum.csrf-cookie › Laravel\Sanctum › CsrfCookieController@show
+  GET|HEAD        storage/{path} storage.local › vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemService…
+  PUT             storage/{path} storage.local.upload › vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem…
+  GET|HEAD        up ..... vendor/laravel/framework/src/Illuminate/Foundation/Configuration/ApplicationBuilder.php:224
+
+                                                                                                   Showing [94] routes
+
